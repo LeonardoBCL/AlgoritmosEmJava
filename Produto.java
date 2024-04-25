@@ -1,19 +1,32 @@
-package aplicacao;
+package atvddpt;
 
 public class Produto {
 	
-	public String produto;
-	public double quantidade;
 	public double preco;
-
-	public void AddProduto ( int estoque) {
-		this.quantidade += estoque;
+	public int quantidade;
+	public String nome;
+	
+	
+	public void Nomeiaproduto(String nome) {
+		
+		this.nome = nome;
 		
 	}
 	
-	public void Subtraiproduto (int estoque) {
+	
+	
+	public void Addproduto (int quantidade) {
+		this.quantidade += quantidade;
+	}
+	
+	public void Subtraiproduto(int estoque) {
 		this.quantidade -= estoque;
+		
 	}
 	
 	
+	
+	
+	
+
 }
